@@ -1,0 +1,11 @@
+<%= @articles.each do |article| %>
+	<h1><%= link_to article.tittle,article %></h1>
+		<div>
+			<%= article.body %> -  <%= link_to "Eliminar", article_path(article), method: :delete %> - <%= link_to "Editar ", edit_article_path(article)%>
+		</div>
+<%end%>
+
+<div>
+	<%= link_to "Crear nuevo ", new_article_path%>
+		
+</div>

@@ -1,0 +1,9 @@
+<h1><%= @articles.tittle %></h1>
+	<div>
+		<%= @articles.body %>
+	</div>
+	<div>
+		<%= link_to "Todos los artículos ", articles_path%>
+		<%= link_to "Crear nuevo ", new_article_path%>
+		<%= link_to "Editar ", edit_article_path(@articles)%>
+	</div>
